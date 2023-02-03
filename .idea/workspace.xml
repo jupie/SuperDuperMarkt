@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="850ff410-6e18-445d-890f-9e5deace5b8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProductTest.java" afterDir="false" />
+    <list default="true" id="850ff410-6e18-445d-890f-9e5deace5b8b" name="Changes" comment="Adding the Product">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Rack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/MockUpRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -34,7 +32,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2LE1wOB3UWm5qiahKtXZuq1lhU9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,7 +47,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.ProductTest.testIfExpired">
+  <component name="RunManager" selected="JUnit.RackTest.testIncreaseDay">
     <configuration name="ProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SuperDuperMarkt" />
       <option name="PACKAGE_NAME" value="" />
@@ -62,16 +62,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ProductTest" />
       <option name="METHOD_NAME" value="testDecreaseQuality" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductTest.testGetDailyPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SuperDuperMarkt" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProductTest" />
-      <option name="METHOD_NAME" value="testGetDailyPrice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,13 +87,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RackTest.testIncreaseDay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SuperDuperMarkt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RackTest" />
+      <option name="METHOD_NAME" value="testIncreaseDay" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RackTest.testIncreaseDay" />
         <item itemvalue="JUnit.ProductTest.testIfExpired" />
         <item itemvalue="JUnit.ProductTest" />
         <item itemvalue="JUnit.ProductTest.testDecreaseQuality" />
         <item itemvalue="JUnit.ProductTest.testIncreaseQuality" />
-        <item itemvalue="JUnit.ProductTest.testGetDailyPrice" />
       </list>
     </recent_temporary>
   </component>
@@ -116,8 +116,17 @@
       <option name="presentableId" value="Default" />
       <updated>1675421669508</updated>
       <workItem from="1675421671420" duration="2627000" />
-      <workItem from="1675442994291" duration="1326000" />
+      <workItem from="1675442994291" duration="5442000" />
+      <workItem from="1675460802450" duration="1514000" />
     </task>
+    <task id="LOCAL-00001" summary="Adding the Product">
+      <created>1675444660289</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675444660289</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,5 +142,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding the Product" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding the Product" />
   </component>
 </project>
