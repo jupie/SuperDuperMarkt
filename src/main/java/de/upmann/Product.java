@@ -26,14 +26,15 @@ public class Product {
     public String summary() {
 
         return "Produkt " + this.name + " läuft ab am " + this.expiryDate.get(Calendar.DAY_OF_MONTH) + "."
-                + this.expiryDate.get(Calendar.MONTH)+1 + "." + this.expiryDate.get(Calendar.YEAR) + ",  Grundpreis "
+                + (this.expiryDate.get(Calendar.MONTH)+1) + "." + this.expiryDate.get(Calendar.YEAR) + ",  Grundpreis "
                 + this.price + "€cent,  Qualität " + this.quality;
     }
 
     @Override
     public String toString() {
 
-        return "Produkt " + this.name + " Preis: " + this.getDailyPrice() + "  Qualität " + this.quality + " " + (this.isExpired(Calendar.getInstance()) ? "Abgelaufen" : "Noch gut");
+        return "Produkt " + this.name + " Preis: " + this.getDailyPrice() + "  Qualität " + this.quality + " " +
+                (this.isExpired(Calendar.getInstance()) ? "Abgelaufen" : "Noch gut");
     }
 
 
@@ -50,4 +51,12 @@ public class Product {
     }
 
     public void aging(){}
+
+    public int getQuality() {
+        return this.quality;
+    }
+
+    protected String getName() {
+        return this.name;
+    }
 }

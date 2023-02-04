@@ -13,7 +13,7 @@ public class ProductTest {
     public void init(){
         Calendar date  = Calendar.getInstance();
         date.add(Calendar.DAY_OF_MONTH,5);
-        this.product = new Product(date, 0,0,"test");
+        this.product = new Product(date, 10,100,"test");
     }
 
 
