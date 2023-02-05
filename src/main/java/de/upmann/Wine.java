@@ -4,10 +4,12 @@ import de.upmann.exceptions.WineWithLowQualityException;
 
 import java.util.Calendar;
 
+
+//Dependency Inversion Principle Neue Produktart wird über Veerbrung realisiert
 public class Wine extends Product {
     private final int price;
     private int age;
-
+    //Fail Fast
     public Wine(int quality, int price, String name) throws WineWithLowQualityException {
         super(Calendar.getInstance(), quality, price, name);
         if (quality < 0) {

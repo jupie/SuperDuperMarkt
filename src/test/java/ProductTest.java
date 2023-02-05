@@ -49,5 +49,12 @@ public class ProductTest {
 
     }
 
+    @Test
+    public void testEquals(){
+        assert  this.product.equals(this.product);
+        assert !this.product.equals(null);
+        assert !this.product.equals(new Product(Calendar.getInstance(),0,0,""));
+    }
+
 
 }

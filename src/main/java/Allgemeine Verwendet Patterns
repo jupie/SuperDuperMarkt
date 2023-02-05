@@ -1,0 +1,12 @@
+Classes Should be Small -> maximum 50 Zeilen Code pro Klasse;
+
+Executing Tests Requires Only One Step/ Project Build Requires Only One Step-> MAVEN
+Source Control System-> GIT
+
+Choose Descriptive / Unambiguous Names
+
+
+Methods Should Do One Thing
+Methods Should Descend 1 Level of Abstraction
+
+Tests: Fast, Isolated, Repeatable, Self Validating

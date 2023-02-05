@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="850ff410-6e18-445d-890f-9e5deace5b8b" name="Changes" comment="Adding the Rack">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Cheese.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Wine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/exceptions/CheeseHasLessThenFiftyDaysExpiryException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/exceptions/CheeseHasLowQualityException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/exceptions/CheeseHasMoreThenHundredyDaysExpiryException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/exceptions/WineWithLowQualityException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CheeseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WineTest.java" afterDir="false" />
+    <list default="true" id="850ff410-6e18-445d-890f-9e5deace5b8b" name="Changes" comment="Adding Cheese and Wine">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Allgemeine Verwendet Patterns" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Cheese.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Cheese.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/MockUpRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/MockUpRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Rack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Rack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Wine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Wine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +55,21 @@
       <recent name="de.upmann" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in SuperDuperMarkt">
+  <component name="RunManager" selected="JUnit.ProductTest.testEquals">
     <configuration name="All in SuperDuperMarkt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SuperDuperMarkt" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SuperDuperMarkt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProductTest" />
+      <option name="METHOD_NAME" value="testEquals" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,16 +94,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WineTest.testWinePricing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SuperDuperMarkt" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WineTest" />
-      <option name="METHOD_NAME" value="testWinePricing" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WineTest.testWineQualityIncreasesEveryTenDays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SuperDuperMarkt" />
       <option name="PACKAGE_NAME" value="" />
@@ -110,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductTest.testEquals" />
         <item itemvalue="JUnit.All in SuperDuperMarkt" />
         <item itemvalue="JUnit.RackTest.testIncreaseDay" />
         <item itemvalue="JUnit.WineTest.testWineQualityIncreasesEveryTenDays" />
         <item itemvalue="JUnit.WineTest.testWineNeverExpires" />
-        <item itemvalue="JUnit.WineTest.testWinePricing" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +125,8 @@
       <workItem from="1675421671420" duration="2627000" />
       <workItem from="1675442994291" duration="5442000" />
       <workItem from="1675460802450" duration="3604000" />
-      <workItem from="1675520228880" duration="3652000" />
+      <workItem from="1675520228880" duration="3869000" />
+      <workItem from="1675599563878" duration="1387000" />
     </task>
     <task id="LOCAL-00001" summary="Adding the Product">
       <created>1675444660289</created>
@@ -145,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675462395796</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding Cheese and Wine">
+      <created>1675524089298</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675524089298</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +169,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding the Product" />
     <MESSAGE value="Adding the Rack" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding the Rack" />
+    <MESSAGE value="Adding Cheese and Wine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Cheese and Wine" />
   </component>
 </project>

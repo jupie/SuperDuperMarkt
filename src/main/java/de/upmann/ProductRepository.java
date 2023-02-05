@@ -1,12 +1,13 @@
 package de.upmann;
 
 import java.util.ArrayList;
+//Interface Segregation Principle Zusammen mit ein Bisschen Onion Architecture
 
 public interface ProductRepository {
 
-    public ArrayList<Product> getProducts();
+    ArrayList<Product> getProducts();
 
-    public void removeProduct(Product product);
+    void removeProduct(Product product);
 
     void updateProducts(ArrayList<Product> products);
 }

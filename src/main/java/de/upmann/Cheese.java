@@ -6,6 +6,8 @@ import de.upmann.exceptions.CheeseHasMoreThenHundredyDaysExpiryException;
 
 import java.util.Calendar;
 
+//Dependency Inversion Principle Neue Produktart wird über Veerbrung realisiert
+//Prefer Polymorphism To If/Else or Switch/Case
 public class Cheese extends Product{
     public Cheese(Calendar expiryDate, int quality, int price, String name) throws CheeseHasLowQualityException, CheeseHasLessThenFiftyDaysExpiryException, CheeseHasMoreThenHundredyDaysExpiryException {
         super(expiryDate, quality, price, name);
@@ -24,6 +26,8 @@ public class Cheese extends Product{
         }
 
     }
+
+    //Encapsulate Conditionals
     @Override
     public boolean isExpired(Calendar today) {
 

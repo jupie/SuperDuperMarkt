@@ -2,9 +2,10 @@ package de.upmann;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-
+//Do stuff or know others, but not both -> Do Stuff Rack class | Know others Repository
 public class Rack {
 
+    //Dependency Injection
     private final ProductRepository productRepository;
     private final Calendar today = Calendar.getInstance();
 
