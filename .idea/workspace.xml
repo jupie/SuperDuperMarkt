@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="850ff410-6e18-445d-890f-9e5deace5b8b" name="Changes" comment="Adding ID to Product&#10;&#10;Adding Patterns description to classes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/CSVRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CSVRepositoryTest.java" afterDir="false" />
+    <list default="true" id="850ff410-6e18-445d-890f-9e5deace5b8b" name="Changes" comment="Adding CSV Repository">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Allgemeine Verwendet Patterns" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Allgemeine Verwendet Principles" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Cheese.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Cheese.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Wine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Wine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Rack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Rack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +50,20 @@
       <recent name="de.upmann" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CSVRepositoryTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="de.upmann.Main" />
+      <module name="SuperDuperMarkt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.upmann.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CSVRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SuperDuperMarkt" />
       <option name="PACKAGE_NAME" value="" />
@@ -95,23 +103,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SuperDuperMarkt" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProductTest" />
-      <option name="METHOD_NAME" value="testEquals" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CSVRepositoryTest" />
         <item itemvalue="JUnit.CSVRepositoryTest.testRemoveObjectFromCSV" />
         <item itemvalue="JUnit.CSVRepositoryTest.testReadCSV" />
         <item itemvalue="JUnit.CSVRepositoryTest.testUpdate" />
-        <item itemvalue="JUnit.ProductTest.testEquals" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +125,7 @@
       <workItem from="1675442994291" duration="5442000" />
       <workItem from="1675460802450" duration="3604000" />
       <workItem from="1675520228880" duration="3869000" />
-      <workItem from="1675599563878" duration="10299000" />
+      <workItem from="1675599563878" duration="11791000" />
     </task>
     <task id="LOCAL-00001" summary="Adding the Product">
       <created>1675444660289</created>
@@ -157,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675601123241</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding CSV Repository">
+      <created>1675615556052</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675615556052</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +184,7 @@
     <MESSAGE value="Adding the Rack" />
     <MESSAGE value="Adding Cheese and Wine" />
     <MESSAGE value="Adding ID to Product&#10;&#10;Adding Patterns description to classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding ID to Product&#10;&#10;Adding Patterns description to classes" />
+    <MESSAGE value="Adding CSV Repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding CSV Repository" />
   </component>
 </project>
