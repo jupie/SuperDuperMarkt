@@ -10,8 +10,9 @@ public class Wine extends Product {
     private final int price;
     private int age;
 
-    public Wine(String id,int quality, int price, String name) throws WineWithLowQualityException {
+    public Wine(String id,int quality, int price, String name, int age) throws WineWithLowQualityException {
         super(Calendar.getInstance(),id, quality, price, name);
+        this.age = age;
         if (quality < 0) {
             throw new WineWithLowQualityException();
         }
@@ -20,6 +21,7 @@ public class Wine extends Product {
     //Fail Fast
     public Wine(int quality, int price, String name) throws WineWithLowQualityException {
         super(Calendar.getInstance(), quality, price, name);
+        this.age = 0;
         if (quality < 0) {
             throw new WineWithLowQualityException();
         }
@@ -54,5 +56,7 @@ public class Wine extends Product {
     }
 
 
-
+    public int getAge() {
+        return this.age;
+    }
 }

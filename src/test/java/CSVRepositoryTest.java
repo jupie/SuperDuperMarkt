@@ -11,15 +11,16 @@ public class CSVRepositoryTest {
     CSVRepository csvRepository;
     MockUpRepository mockUpRepository;
 
-    private  final String fileName = "test.csv";
+    private final String fileName = "test.csv";
+
     @Before
-    public  void init(){
+    public void init() {
         this.csvRepository = new CSVRepository(fileName);
         this.mockUpRepository = new MockUpRepository();
     }
 
     @Test
-    public void testUpdate()  {
+    public void testUpdate() {
         this.csvRepository.updateProducts(mockUpRepository.getProducts());
         File file = new File(fileName);
         assert file.exists();
@@ -30,13 +31,11 @@ public class CSVRepositoryTest {
         this.csvRepository.updateProducts(mockUpRepository.getProducts());
         this.csvRepository = new CSVRepository(fileName);
         this.csvRepository.getProducts().forEach(product -> {
-             assert this.mockUpRepository.getProducts().stream().filter(
-                    mockupproduct-> product.equals(mockupproduct)
-            ).count()== 1;
+            assert this.mockUpRepository.getProducts().stream().filter(product::equals).count() == 1;
 
         });
         this.mockUpRepository.getProducts().forEach(product -> {
-            assert this.csvRepository.getProducts().stream().filter(csvObject-> product.equals((Object)csvObject)).count()==1;
+            assert this.csvRepository.getProducts().stream().filter(product::equals).count() == 1;
 
         });
 
@@ -50,7 +49,7 @@ public class CSVRepositoryTest {
         Product objectToRemove = this.csvRepository.getProducts().get(2);
         this.csvRepository.removeProduct(objectToRemove);
         this.csvRepository = new CSVRepository(fileName);
-        assert this.csvRepository.getProducts().stream().noneMatch(product -> product.equals((Object) objectToRemove));
+        assert this.csvRepository.getProducts().stream().noneMatch(product -> product.equals(objectToRemove));
 
 
     }

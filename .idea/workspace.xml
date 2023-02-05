@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="850ff410-6e18-445d-890f-9e5deace5b8b" name="Changes" comment="Adding CSV Repository">
+    <list default="true" id="850ff410-6e18-445d-890f-9e5deace5b8b" name="Changes" comment="Adding main Programm Flow">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/CollectorsCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/exceptions/CollectorsCardIsOverQualityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CollectorsCardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Rack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Rack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Wine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Wine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/CSVRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/CSVRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/MockUpRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/MockUpRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CSVRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CSVRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +56,13 @@
       <recent name="de.upmann" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.CollectorsCardTest.testQualityFall">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.upmann.Main" />
       <module name="SuperDuperMarkt" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="de.upmann.*" />
+          <option name="PATTERN" value="de.upmann.exceptions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,26 +79,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CSVRepositoryTest.testReadCSV" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SuperDuperMarkt" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CSVRepositoryTest" />
-      <option name="METHOD_NAME" value="testReadCSV" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CSVRepositoryTest.testRemoveObjectFromCSV" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SuperDuperMarkt" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CSVRepositoryTest" />
-      <option name="METHOD_NAME" value="testRemoveObjectFromCSV" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CSVRepositoryTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SuperDuperMarkt" />
       <option name="PACKAGE_NAME" value="" />
@@ -103,13 +89,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CollectorsCardTest.testDaylyPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SuperDuperMarkt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CollectorsCardTest" />
+      <option name="METHOD_NAME" value="testDaylyPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CollectorsCardTest.testQualityFall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SuperDuperMarkt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CollectorsCardTest" />
+      <option name="METHOD_NAME" value="testQualityFall" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CollectorsCardTest.testQualityFall" />
+        <item itemvalue="JUnit.CollectorsCardTest.testDaylyPrice" />
         <item itemvalue="JUnit.CSVRepositoryTest" />
-        <item itemvalue="JUnit.CSVRepositoryTest.testRemoveObjectFromCSV" />
-        <item itemvalue="JUnit.CSVRepositoryTest.testReadCSV" />
         <item itemvalue="JUnit.CSVRepositoryTest.testUpdate" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -125,7 +131,7 @@
       <workItem from="1675442994291" duration="5442000" />
       <workItem from="1675460802450" duration="3604000" />
       <workItem from="1675520228880" duration="3869000" />
-      <workItem from="1675599563878" duration="11791000" />
+      <workItem from="1675599563878" duration="14320000" />
     </task>
     <task id="LOCAL-00001" summary="Adding the Product">
       <created>1675444660289</created>
@@ -162,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675615556052</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding main Programm Flow">
+      <created>1675616851818</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675616851818</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +198,18 @@
     <MESSAGE value="Adding Cheese and Wine" />
     <MESSAGE value="Adding ID to Product&#10;&#10;Adding Patterns description to classes" />
     <MESSAGE value="Adding CSV Repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding CSV Repository" />
+    <MESSAGE value="Adding main Programm Flow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding main Programm Flow" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/upmann/repositories/CSVRepository.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,13 +1,7 @@
 package de.upmann.repositories;
 
-import de.upmann.Cheese;
-import de.upmann.Product;
-import de.upmann.ProductRepository;
-import de.upmann.Wine;
-import de.upmann.exceptions.CheeseHasLessThenFiftyDaysExpiryException;
-import de.upmann.exceptions.CheeseHasLowQualityException;
-import de.upmann.exceptions.CheeseHasMoreThenHundredyDaysExpiryException;
-import de.upmann.exceptions.WineWithLowQualityException;
+import de.upmann.*;
+import de.upmann.exceptions.*;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -59,20 +53,22 @@ public class CSVRepository implements ProductRepository {
     private ArrayList<String> serializeProducts() {
         ArrayList<String> lines = new ArrayList<>();
         this.products.forEach(product -> {
-            String type = this.getProductType(product);
             lines.add(product.getId()+DELIMITER+product.getExpiryDate().getTimeInMillis()
                     +DELIMITER+product.getQuality()
                     +DELIMITER+product.getPrice()
                     +DELIMITER+product.getName()
-                    +DELIMITER+type);
+                    +DELIMITER+this.specificInformation(product));
         });
 
         return lines;
     }
 
-    private String getProductType(Product product) {
+    private String specificInformation(Product product) {
         if(product.getClass()== Wine.class){
-            return "w";
+            return "w"+DELIMITER+((Wine)product).getAge();
+        }
+        if(product.getClass()== CollectorsCard.class){
+            return "k"+DELIMITER+((CollectorsCard)product).getAge();
         }
         if(product.getClass()== Cheese.class){
             return "c";
@@ -91,13 +87,15 @@ public class CSVRepository implements ProductRepository {
         } catch (FileNotFoundException | WineWithLowQualityException | CheeseHasLowQualityException |
                  CheeseHasLessThenFiftyDaysExpiryException | CheeseHasMoreThenHundredyDaysExpiryException e) {
             System.out.println("CSV Datei könnte beschädigt sein");
+        } catch (CollectorsCardIsOverQualityException e) {
+            throw new RuntimeException(e);
         }
         return productRecords;
     }
 
 
 
-    private Product parse(String line) throws WineWithLowQualityException, CheeseHasLowQualityException, CheeseHasLessThenFiftyDaysExpiryException, CheeseHasMoreThenHundredyDaysExpiryException {
+    private Product parse(String line) throws WineWithLowQualityException, CheeseHasLowQualityException, CheeseHasLessThenFiftyDaysExpiryException, CheeseHasMoreThenHundredyDaysExpiryException, CollectorsCardIsOverQualityException {
 
         String[] values = line.split(DELIMITER);
 
@@ -112,7 +110,10 @@ public class CSVRepository implements ProductRepository {
         if(values.length>5){
             String type = values[5];
             if (type.equals("w")) {
-                return new Wine(id, quality, price, name);
+                return new Wine(id, quality, price, name,Integer.parseInt(values[6]));
+            }
+            if (type.equals("k")) {
+                return new CollectorsCard(id, quality, price, name,Integer.parseInt(values[6]));
             }
             if (type.equals("c")) {
                 return new Cheese(id, expiryDate, quality, price, name);

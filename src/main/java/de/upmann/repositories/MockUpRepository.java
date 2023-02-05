@@ -1,9 +1,6 @@
 package de.upmann.repositories;
 
-import de.upmann.Cheese;
-import de.upmann.Product;
-import de.upmann.ProductRepository;
-import de.upmann.Wine;
+import de.upmann.*;
 import de.upmann.exceptions.CheeseHasLessThenFiftyDaysExpiryException;
 import de.upmann.exceptions.CheeseHasLowQualityException;
 import de.upmann.exceptions.CheeseHasMoreThenHundredyDaysExpiryException;
@@ -43,6 +40,12 @@ public class MockUpRepository implements ProductRepository {
             } catch (WineWithLowQualityException e) {
                 System.out.println("Probleme mit Wein");
             }
+        }
+        for (int i = 0; i < 5; i++) {
+
+
+                products.add(new CollectorsCard(1,10,"Sammelkarte"+i));
+
         }
 
 
