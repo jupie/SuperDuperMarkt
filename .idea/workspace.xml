@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="850ff410-6e18-445d-890f-9e5deace5b8b" name="Changes" comment="Adding Cheese and Wine">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Allgemeine Verwendet Patterns" afterDir="false" />
+    <list default="true" id="850ff410-6e18-445d-890f-9e5deace5b8b" name="Changes" comment="Adding ID to Product&#10;&#10;Adding Patterns description to classes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/CSVRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CSVRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Allgemeine Verwendet Patterns" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Allgemeine Verwendet Principles" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Cheese.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Cheese.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Rack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Rack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Wine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Wine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,24 +41,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="de.upmann" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductTest.testEquals">
-    <configuration name="All in SuperDuperMarkt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CSVRepositoryTest">
+    <configuration name="CSVRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SuperDuperMarkt" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="CSVRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CSVRepositoryTest.testReadCSV" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SuperDuperMarkt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CSVRepositoryTest" />
+      <option name="METHOD_NAME" value="testReadCSV" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CSVRepositoryTest.testRemoveObjectFromCSV" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SuperDuperMarkt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CSVRepositoryTest" />
+      <option name="METHOD_NAME" value="testRemoveObjectFromCSV" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CSVRepositoryTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SuperDuperMarkt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CSVRepositoryTest" />
+      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -74,43 +105,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RackTest.testIncreaseDay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SuperDuperMarkt" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RackTest" />
-      <option name="METHOD_NAME" value="testIncreaseDay" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WineTest.testWineNeverExpires" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SuperDuperMarkt" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WineTest" />
-      <option name="METHOD_NAME" value="testWineNeverExpires" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WineTest.testWineQualityIncreasesEveryTenDays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SuperDuperMarkt" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WineTest" />
-      <option name="METHOD_NAME" value="testWineQualityIncreasesEveryTenDays" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CSVRepositoryTest" />
+        <item itemvalue="JUnit.CSVRepositoryTest.testRemoveObjectFromCSV" />
+        <item itemvalue="JUnit.CSVRepositoryTest.testReadCSV" />
+        <item itemvalue="JUnit.CSVRepositoryTest.testUpdate" />
         <item itemvalue="JUnit.ProductTest.testEquals" />
-        <item itemvalue="JUnit.All in SuperDuperMarkt" />
-        <item itemvalue="JUnit.RackTest.testIncreaseDay" />
-        <item itemvalue="JUnit.WineTest.testWineQualityIncreasesEveryTenDays" />
-        <item itemvalue="JUnit.WineTest.testWineNeverExpires" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +127,7 @@
       <workItem from="1675442994291" duration="5442000" />
       <workItem from="1675460802450" duration="3604000" />
       <workItem from="1675520228880" duration="3869000" />
-      <workItem from="1675599563878" duration="1387000" />
+      <workItem from="1675599563878" duration="10299000" />
     </task>
     <task id="LOCAL-00001" summary="Adding the Product">
       <created>1675444660289</created>
@@ -149,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675524089298</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding ID to Product&#10;&#10;Adding Patterns description to classes">
+      <created>1675601123241</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675601123241</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +178,7 @@
     <MESSAGE value="Adding the Product" />
     <MESSAGE value="Adding the Rack" />
     <MESSAGE value="Adding Cheese and Wine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Cheese and Wine" />
+    <MESSAGE value="Adding ID to Product&#10;&#10;Adding Patterns description to classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding ID to Product&#10;&#10;Adding Patterns description to classes" />
   </component>
 </project>

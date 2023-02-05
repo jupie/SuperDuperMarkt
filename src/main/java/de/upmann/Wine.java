@@ -9,6 +9,14 @@ import java.util.Calendar;
 public class Wine extends Product {
     private final int price;
     private int age;
+
+    public Wine(String id,int quality, int price, String name) throws WineWithLowQualityException {
+        super(Calendar.getInstance(),id, quality, price, name);
+        if (quality < 0) {
+            throw new WineWithLowQualityException();
+        }
+        this.price = super.getDailyPrice();
+    }
     //Fail Fast
     public Wine(int quality, int price, String name) throws WineWithLowQualityException {
         super(Calendar.getInstance(), quality, price, name);

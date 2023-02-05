@@ -9,9 +9,19 @@ import java.util.Calendar;
 //Dependency Inversion Principle Neue Produktart wird über Veerbrung realisiert
 //Prefer Polymorphism To If/Else or Switch/Case
 public class Cheese extends Product{
+    public Cheese(String id, Calendar expiryDate, int quality, int price, String name) throws CheeseHasLowQualityException, CheeseHasLessThenFiftyDaysExpiryException, CheeseHasMoreThenHundredyDaysExpiryException {
+        super(expiryDate,id, quality, price, name);
+        testExpiry(expiryDate, quality);
+
+    }
     public Cheese(Calendar expiryDate, int quality, int price, String name) throws CheeseHasLowQualityException, CheeseHasLessThenFiftyDaysExpiryException, CheeseHasMoreThenHundredyDaysExpiryException {
         super(expiryDate, quality, price, name);
-        if(quality<30){
+        testExpiry(expiryDate, quality);
+
+    }
+
+    private static void testExpiry(Calendar expiryDate, int quality) throws CheeseHasLowQualityException, CheeseHasLessThenFiftyDaysExpiryException, CheeseHasMoreThenHundredyDaysExpiryException {
+        if(quality <30){
             throw new CheeseHasLowQualityException();
         }
         Calendar inFiftyDays = Calendar.getInstance();
@@ -24,7 +34,6 @@ public class Cheese extends Product{
         if(expiryDate.after(inHundredDays)){
             throw new CheeseHasMoreThenHundredyDaysExpiryException();
         }
-
     }
 
     //Encapsulate Conditionals

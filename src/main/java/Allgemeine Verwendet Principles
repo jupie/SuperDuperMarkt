@@ -1,4 +1,4 @@
-Classes Should be Small -> maximum 50 Zeilen Code pro Klasse;
+Classes Should be Small -> maximum 50 Zeilen Code pro Klasse, Außer bei den Tests
 
 Executing Tests Requires Only One Step/ Project Build Requires Only One Step-> MAVEN
 Source Control System-> GIT

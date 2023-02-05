@@ -51,7 +51,6 @@ public class Product {
         return "Produkt " + this.name + " Preis: " + this.getDailyPrice() + "  Qualität " + this.quality + " " + (this.isExpired(Calendar.getInstance()) ? "Abgelaufen" : "Noch gut");
     }
 
-
     public void increaseQuality() {
         this.quality++;
     }
@@ -71,7 +70,7 @@ public class Product {
         return this.quality;
     }
 
-    protected String getName() {
+    public String getName() {
         return this.name;
     }
 
@@ -86,5 +85,17 @@ public class Product {
         }
 
         return other.id.equals(this.id);
+    }
+
+    public Calendar getExpiryDate() {
+        return expiryDate;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public int getPrice() {
+        return price;
     }
 }
