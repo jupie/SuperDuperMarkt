@@ -36,3 +36,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/test
+/markt.db
+/markt.csv
+/test.csv
