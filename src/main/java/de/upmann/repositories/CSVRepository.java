@@ -142,4 +142,10 @@ public class CSVRepository implements ProductRepository {
         this.products = products;
         this.writeFile();
     }
+
+    @Override
+    public void addProduct(Product product) {
+        this.products.add(product);
+        this.writeFile();
+    }
 }

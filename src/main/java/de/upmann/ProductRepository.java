@@ -12,4 +12,5 @@ public interface ProductRepository {
     void updateProducts(ArrayList<Product> products);
 
 
+    void addProduct(Product product);
 }

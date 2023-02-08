@@ -48,6 +48,13 @@ public class CollectorsCard extends Product {
 
     }
 
+    @Override
+    public String summary() {
+
+        return "Produkt " + super.getName() + " läuft nicht ab Grundpreis "
+                + super.getDailyPrice() + "€cent,  Qualität " + this.getQuality();
+    }
+
     public int getAge() {
         return this.age;
     }

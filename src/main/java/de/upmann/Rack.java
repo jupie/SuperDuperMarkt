@@ -30,12 +30,16 @@ public class Rack {
     }
 
     public void increasDay() {
+        ArrayList<Product> products = this.productRepository.getProducts();
         this.today.add(Calendar.DAY_OF_MONTH, 1);
         this.printDayly();
         this.sortOutExpiredProducts();
-        ArrayList<Product> products = this.productRepository.getProducts();
         products.forEach(Product::aging);
         this.productRepository.updateProducts(products);
+    }
+
+    public  void addProduct(Product product){
+       this.productRepository.addProduct(product);
     }
 
 }

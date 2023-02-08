@@ -80,7 +80,6 @@ public class Product {
     @Override
     public boolean equals(Object product) {
         Product other = (Product) product;
-        
         if (this.id == null || product == null || other.id == null) {
             return false;
         }

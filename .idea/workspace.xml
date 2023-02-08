@@ -4,16 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="850ff410-6e18-445d-890f-9e5deace5b8b" name="Changes" comment="Adding main Programm Flow">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/CollectorsCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/exceptions/CollectorsCardIsOverQualityException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CollectorsCardTest.java" afterDir="false" />
+    <list default="true" id="850ff410-6e18-445d-890f-9e5deace5b8b" name="Changes" comment="Adding CollectorsCard &#10;&#10;Fixing issue aging not saved">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/SQliteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SQliteTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/CollectorsCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/CollectorsCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Wine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Wine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Rack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Rack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/CSVRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/CSVRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/MockUpRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/MockUpRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CSVRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CSVRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,59 +46,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="de.upmann" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CollectorsCardTest.testQualityFall">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.upmann.Main" />
       <module name="SuperDuperMarkt" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="de.upmann.exceptions.*" />
+          <option name="PATTERN" value="de.upmann.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CSVRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SuperDuperMarkt" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CSVRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CSVRepositoryTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SuperDuperMarkt" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CSVRepositoryTest" />
-      <option name="METHOD_NAME" value="testUpdate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CollectorsCardTest.testDaylyPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SuperDuperMarkt" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CollectorsCardTest" />
-      <option name="METHOD_NAME" value="testDaylyPrice" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,13 +89,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SQliteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SuperDuperMarkt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SQliteTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SQliteTest.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SuperDuperMarkt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SQliteTest" />
+      <option name="METHOD_NAME" value="testCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SQliteTest.testReadFROMSQL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SuperDuperMarkt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SQliteTest" />
+      <option name="METHOD_NAME" value="testReadFROMSQL" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CollectorsCardTest.testQualityFall" />
-        <item itemvalue="JUnit.CollectorsCardTest.testDaylyPrice" />
-        <item itemvalue="JUnit.CSVRepositoryTest" />
-        <item itemvalue="JUnit.CSVRepositoryTest.testUpdate" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SQliteTest" />
+        <item itemvalue="JUnit.SQliteTest.testReadFROMSQL" />
+        <item itemvalue="JUnit.SQliteTest.testCreate" />
+        <item itemvalue="JUnit.CollectorsCardTest.testQualityFall" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +140,9 @@
       <workItem from="1675442994291" duration="5442000" />
       <workItem from="1675460802450" duration="3604000" />
       <workItem from="1675520228880" duration="3869000" />
-      <workItem from="1675599563878" duration="14320000" />
+      <workItem from="1675599563878" duration="15365000" />
+      <workItem from="1675680776057" duration="5961000" />
+      <workItem from="1675864942729" duration="3217000" />
     </task>
     <task id="LOCAL-00001" summary="Adding the Product">
       <created>1675444660289</created>
@@ -175,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675616851818</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adding CollectorsCard &#10;&#10;Fixing issue aging not saved">
+      <created>1675619726646</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675619726646</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,17 +217,8 @@
     <MESSAGE value="Adding ID to Product&#10;&#10;Adding Patterns description to classes" />
     <MESSAGE value="Adding CSV Repository" />
     <MESSAGE value="Adding main Programm Flow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding main Programm Flow" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/upmann/repositories/CSVRepository.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Adding CollectorsCard &#10;&#10;Fixing issue aging not safed" />
+    <MESSAGE value="Adding CollectorsCard &#10;&#10;Fixing issue aging not saved" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding CollectorsCard &#10;&#10;Fixing issue aging not saved" />
   </component>
 </project>
