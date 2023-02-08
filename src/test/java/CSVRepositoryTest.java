@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.File;
+import java.util.Calendar;
 
 public class CSVRepositoryTest {
 
@@ -15,8 +16,15 @@ public class CSVRepositoryTest {
 
     @Before
     public void init() {
+        File file = new File(fileName);
+        if(file.exists()){
+            file.delete();
+        }
+
         this.csvRepository = new CSVRepository(fileName);
         this.mockUpRepository = new MockUpRepository();
+
+
     }
 
     @Test
@@ -52,6 +60,16 @@ public class CSVRepositoryTest {
         assert this.csvRepository.getProducts().stream().noneMatch(product -> product.equals(objectToRemove));
 
 
+    }
+
+    @Test
+    public void testAddProduct(){
+        this.csvRepository.addProduct(new Product(Calendar.getInstance(),1,1,"addedProduct"));
+        assert this.csvRepository.getProducts().stream().anyMatch(product -> product.getName().equals("addedProduct"));
+        this.csvRepository.getProducts().forEach(product -> {
+                if(product.getName().equals("addedProduct")){
+                    this.mockUpRepository.removeProduct(product);
+        }});
     }
 
 }

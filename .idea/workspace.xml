@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="850ff410-6e18-445d-890f-9e5deace5b8b" name="Changes" comment="Adding CollectorsCard &#10;&#10;Fixing issue aging not saved">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/SQliteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SQliteTest.java" afterDir="false" />
+    <list default="true" id="850ff410-6e18-445d-890f-9e5deace5b8b" name="Changes" comment="adding some Gitignoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/CollectorsCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/CollectorsCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/Rack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/Rack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/CSVRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/CSVRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/MockUpRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/upmann/repositories/MockUpRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CSVRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CSVRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RackTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +55,7 @@
       <recent name="de.upmann" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.All in SuperDuperMarkt">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.upmann.Main" />
       <module name="SuperDuperMarkt" />
@@ -79,40 +69,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectorsCardTest.testQualityFall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in SuperDuperMarkt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SuperDuperMarkt" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CollectorsCardTest" />
-      <option name="METHOD_NAME" value="testQualityFall" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CSVRepositoryTest.testAddProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SuperDuperMarkt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CSVRepositoryTest" />
+      <option name="METHOD_NAME" value="testAddProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SQliteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RackTest.testAddProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SuperDuperMarkt" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SQliteTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SQliteTest.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SuperDuperMarkt" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SQliteTest" />
-      <option name="METHOD_NAME" value="testCreate" />
+      <option name="MAIN_CLASS_NAME" value="RackTest" />
+      <option name="METHOD_NAME" value="testAddProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SQliteTest.testReadFROMSQL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SQliteRepositoryTest.testAddProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SuperDuperMarkt" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SQliteTest" />
-      <option name="METHOD_NAME" value="testReadFROMSQL" />
+      <option name="MAIN_CLASS_NAME" value="SQliteRepositoryTest" />
+      <option name="METHOD_NAME" value="testAddProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in SuperDuperMarkt" />
+        <item itemvalue="JUnit.SQliteRepositoryTest.testAddProduct" />
+        <item itemvalue="JUnit.CSVRepositoryTest.testAddProduct" />
+        <item itemvalue="JUnit.RackTest.testAddProduct" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.SQliteTest" />
-        <item itemvalue="JUnit.SQliteTest.testReadFROMSQL" />
-        <item itemvalue="JUnit.SQliteTest.testCreate" />
-        <item itemvalue="JUnit.CollectorsCardTest.testQualityFall" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +131,8 @@
       <workItem from="1675520228880" duration="3869000" />
       <workItem from="1675599563878" duration="15365000" />
       <workItem from="1675680776057" duration="5961000" />
-      <workItem from="1675864942729" duration="3217000" />
+      <workItem from="1675864942729" duration="4321000" />
+      <workItem from="1675874402815" duration="354000" />
     </task>
     <task id="LOCAL-00001" summary="Adding the Product">
       <created>1675444660289</created>
@@ -193,7 +183,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675619726646</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adding add function To Rack">
+      <created>1675868458778</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675868458778</updated>
+    </task>
+    <task id="LOCAL-00009" summary="adding some Gitignoring">
+      <created>1675868536586</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675868536586</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +223,8 @@
     <MESSAGE value="Adding main Programm Flow" />
     <MESSAGE value="Adding CollectorsCard &#10;&#10;Fixing issue aging not safed" />
     <MESSAGE value="Adding CollectorsCard &#10;&#10;Fixing issue aging not saved" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding CollectorsCard &#10;&#10;Fixing issue aging not saved" />
+    <MESSAGE value="Adding add function To Rack" />
+    <MESSAGE value="adding some Gitignoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding some Gitignoring" />
   </component>
 </project>

@@ -5,9 +5,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.sql.SQLException;
+import java.util.Calendar;
 
-public class SQliteTest {
-
+public class SQliteRepositoryTest {
     SQliteRepository sQliteRepository;
     MockUpRepository mockUpRepository;
 
@@ -44,5 +44,17 @@ public class SQliteTest {
 
 
     }
+
+    @Test
+    public void testAddProduct() {
+        this.sQliteRepository.addProduct(new Product(Calendar.getInstance(), 1, 1, "addedProduct"));
+        assert this.sQliteRepository.getProducts().stream().anyMatch(product -> product.getName().equals("addedProduct"));
+        this.sQliteRepository.getProducts().forEach(product -> {
+            if (product.getName().equals("addedProduct")) {
+                this.mockUpRepository.removeProduct(product);
+            }
+        });
+    }
+
 
 }

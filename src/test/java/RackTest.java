@@ -1,7 +1,10 @@
+import de.upmann.Product;
 import de.upmann.Rack;
 import de.upmann.repositories.MockUpRepository;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.Calendar;
 
 
 public class RackTest {
@@ -22,5 +25,11 @@ public class RackTest {
             assert this.mockUpRepository.getProducts().size() ==startsize-i;
         }
 
+    }
+
+    @Test
+    public void testAddProduct(){
+        this.rack.addProduct(new Product(Calendar.getInstance(),1,1,"addedProduct"));
+        assert this.mockUpRepository.getProducts().stream().anyMatch(product -> product.getName().equals("addedProduct"));
     }
 }
