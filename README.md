@@ -24,7 +24,7 @@ Methoden sollten maximal einen Level der Abstraktion enthalten.
 ## Tests: Fast, Isolated, Repeatable, Self Validating
 Tests sollten schnell isoliert, wiederhlbar und Selbst überprüfend sein. Außer die Selbstüberprüfung konnte ich hier alles umsetzen. 
 
-#Allegemeine Prinzipien 
+# Allegemeine Prinzipien 
 - Keep It Simple, Stupid (KISS) 
 - Write DRY Code
 - Open/Closed
